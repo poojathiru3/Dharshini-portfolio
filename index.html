@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dharshini C — Embedded Systems &amp; IoT</title>
+<meta name="description" content="Portfolio of Dharshini C, ECE undergraduate specializing in embedded systems and IoT.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__brand">
+    <span class="chip-pin"></span>Dharshini C<span class="nav__brand-dot">.</span>
+  </a>
+  <nav class="nav__links" id="navLinks">
+    <a href="#profile" data-nav>Profile</a>
+    <a href="#timeline" data-nav>Timeline</a>
+    <a href="#projects" data-nav>Projects</a>
+    <a href="#skills" data-nav>Skills</a>
+    <a href="#contact" data-nav>Contact</a>
+  </nav>
+  <a href="mailto:Dharshini.c2024ece@sece.ac.in" class="btn btn--ghost nav__cta"></a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <svg class="hero__circuit" viewBox="0 0 900 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g class="traces" fill="none" stroke="currentColor" stroke-width="1.4">
+      <path d="M40 90 H300 L340 130 H560 L610 80 H860"/>
+      <path d="M20 220 H180 L220 260 H480 V420 L520 460 H780"/>
+      <path d="M60 560 H260 L300 520 H500 L540 560 H700 L740 600 H880"/>
+      <path d="M120 40 V160 L160 200 V340"/>
+      <path d="M700 40 V190 L740 230 V620"/>
+      <path d="M400 20 V120"/>
+      <path d="M400 600 V680"/>
+    </g>
+    <g class="nodes" fill="currentColor">
+      <circle cx="300" cy="90" r="5"/>
+      <circle cx="560" cy="130" r="5"/>
+      <circle cx="180" cy="220" r="5"/>
+      <circle cx="480" cy="340" r="5"/>
+      <circle cx="260" cy="560" r="5"/>
+      <circle cx="500" cy="520" r="5"/>
+      <circle cx="160" cy="270" r="5"/>
+      <circle cx="740" cy="420" r="5"/>
+    </g>
+    <path id="signalPath" class="signal-path" d="M40 90 H300 L340 130 H560 L610 80 H860" fill="none" stroke="none"/>
+    <circle class="signal-dot" r="5">
+      <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#signalPath"/>
+      </animateMotion>
+    </circle>
+  </svg>
+
+  <div class="hero__inner">
+   
+    <h1 class="hero__name reveal">Dharshini&nbsp;C</h1>
+    <p class="hero__tagline reveal">
+      I build the small, stubborn things that sit between hardware and software —
+      microcontrollers, sensors and circuits on one side, clean code and data on the other.
+    </p>
+
+    <div class="hero__contact reveal">
+      <a href="tel:+916379219540" class="contact-pill">
+        <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.7 21 3 13.3 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"/></svg>
+        6379219540
+      </a>
+      <a href="mailto:Dharshini.c2024ece@sece.ac.in" class="contact-pill">
+        <svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1.4 2 7.1 6.2a1 1 0 0 0 1 0L19.6 7H4.4zM4 9.4V17h16V9.4l-6.9 6a2 2 0 0 1-2.2 0L4 9.4z"/></svg>
+        Dharshini.c2024ece@sece.ac.in
+      </a>
+      <a href="https://www.linkedin.com/in/dharshini-c-a74a18333" class="contact-pill" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M6.94 6.5a1.94 1.94 0 1 1 0-3.88 1.94 1.94 0 0 1 0 3.88zM4.5 8.75h4.88V20.5H4.5V8.75zM13.13 8.75h4.68v1.6h.07c.65-1.16 2.24-2.39 4.6-2.39 4.92 0 5.83 3.06 5.83 7.05v7.49h-4.87v-6.64c0-1.58-.03-3.62-2.24-3.62-2.25 0-2.59 1.71-2.59 3.5v6.76h-4.88V8.75z" transform="translate(0.3 0)"/></svg>
+        linkedin.com/in/dharshini-c
+      </a>
+    </div>
+
+    <div class="hero__actions reveal">
+      <a href="#contact" class="btn btn--solid">Get in touch</a>
+      <a href="#timeline" class="btn btn--ghost">View timeline ↓</a>
+    </div>
+  </div>
+</section>
+
+<main>
+
+<!-- ===== PROFILE ===== -->
+<section class="section" id="profile">
+  <div class="section__head reveal">
+    
+    <h2>Profile</h2>
+  </div>
+  <div class="profile__grid">
+    <p class="profile__text reveal">
+      I'm a third-year Electronics &amp; Communication Engineering student at Sri Eshwar College of Engineering,
+      currently at a <strong>7.4 CGPA</strong> through semester&nbsp;3. My interest sits at the intersection of
+      hardware and software — I like taking a circuit from a breadboard to a working, connected device, then
+      writing the code that makes it useful. That's pulled me toward embedded systems and IoT: microcontroller
+      programming, sensor interfacing and real-time data pipelines, backed by a working knowledge of C, Python
+      and Java for the software side.
+    </p>
+    <p class="profile__text reveal">
+      Outside coursework, I practice problem-solving daily on LeetCode and SkillRack, and I'm building a small
+      portfolio of independent projects — from a personal finance tracker to an AI-assisted component
+      management system — as a way of learning by shipping rather than just studying theory.
+    </p>
+    <div class="profile__stats reveal">
+      <div class="stat-card">
+        <span class="stat-num" data-count="7.4" data-decimal="true">0</span>
+        <span class="stat-label">CGPA — Sem 1–3</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num" data-count="30">0</span>
+        <span class="stat-label">LeetCode problems solved</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num" data-count="700">0</span>
+        <span class="stat-label">SkillRack problems solved</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TIMELINE ===== -->
+<section class="section section--alt" id="timeline">
+  <div class="section__head reveal">
+    
+    <h2>Timeline</h2>
+    <p class="section__sub">Education, hands-on training and internship experience, in order.</p>
+  </div>
+
+  <div class="timeline">
+
+    <div class="tl-item reveal">
+      <div class="tl-node"></div>
+      <div class="tl-card">
+        <span class="tl-year">2024 — 2028</span>
+        <h3>B.E. Electronics &amp; Communication Engineering</h3>
+        <p class="tl-org">Sri Eshwar College of Engineering</p>
+        <p>Currently in progress, through semester 3, with a CGPA of 7.4. Coursework spans circuit
+          analysis, semiconductor devices, digital &amp; analog electronics and programming fundamentals.</p>
+      </div>
+    </div>
+
+    <div class="tl-item reveal">
+      <div class="tl-node"></div>
+      <div class="tl-card">
+        <span class="tl-year">2026</span>
+        <h3>Embedded Program Intern</h3>
+        <p class="tl-org">NIELIT</p>
+        <p>Hands-on internship in embedded systems and IoT — working directly with microcontrollers and
+          sensors to build and test IoT-based applications covering real-time data acquisition, device
+          communication and smart automation.</p>
+      </div>
+    </div>
+
+    <div class="tl-item reveal">
+      <div class="tl-node"></div>
+      <div class="tl-card">
+        <span class="tl-year">2025</span>
+        <h3>Embedded Systems &amp; IoT Workshop</h3>
+        <p class="tl-org">MIT Campus</p>
+        <p>A hands-on workshop covering microcontroller programming, sensor interfacing, Embedded C and
+          real-time IoT application development.</p>
+      </div>
+    </div>
+
+    <div class="tl-item reveal">
+      <div class="tl-node"></div>
+      <div class="tl-card">
+        <span class="tl-year">2021 — 2024</span>
+        <h3>Higher Secondary Schooling</h3>
+        <p class="tl-org">RKR GRKS Matriculation Higher Secondary School</p>
+        <p>SSLC — 77.3% &nbsp;·&nbsp; HSC — 74.8%</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="section" id="projects">
+  <div class="section__head reveal">
+   
+    <h2>Projects</h2>
+    <p class="section__sub">Independent builds — learning by shipping.</p>
+  </div>
+
+  <div class="projects__grid">
+    <article class="project-card reveal">
+      <div class="project-card__top">
+        <span class="project-year">2025</span>
+        <h3>Personal Finance Tracker</h3>
+      </div>
+      <p>A Python application to record, categorize and analyze daily income and expenses. Built for
+        budget monitoring, expense reporting and financial data visualization — turning raw transactions
+        into decisions worth acting on.</p>
+      <div class="tag-row">
+        <span class="tag">Python</span>
+        <span class="tag">Data Visualization</span>
+        <span class="tag">Budgeting Logic</span>
+      </div>
+    </article>
+
+    <article class="project-card reveal">
+      <div class="project-card__top">
+        <span class="project-year">2026</span>
+        <h3>Smart Components AI Management System</h3>
+      </div>
+      <p>An AI-powered system to monitor, organize and manage electronic components. Includes intelligent
+        tracking, inventory management and predictive analytics to cut down wasted stock and speed up
+        decision-making on a lab bench.</p>
+      <div class="tag-row">
+        <span class="tag">AI / Predictive Analytics</span>
+        <span class="tag">Inventory Systems</span>
+        <span class="tag">Python</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="section section--alt" id="skills">
+  <div class="section__head reveal">
+    
+    <h2>Skills &amp; Tools</h2>
+    <p class="section__sub">Component list — what I build with.</p>
+  </div>
+
+  <div class="skills__grid">
+    <div class="ic-card reveal">
+      <div class="ic-pins ic-pins--top"><span></span><span></span><span></span><span></span></div>
+      <h3>Programming</h3>
+      <ul class="skill-list">
+        <li><span>C</span><em>Intermediate</em></li>
+        <li><span>Python</span><em>Basics</em></li>
+        <li><span>Java</span><em>Basics</em></li>
+      </ul>
+      <div class="ic-pins ic-pins--bottom"><span></span><span></span><span></span><span></span></div>
+    </div>
+
+    <div class="ic-card reveal">
+      <div class="ic-pins ic-pins--top"><span></span><span></span><span></span><span></span></div>
+      <h3>Core Concepts</h3>
+      <ul class="skill-list">
+        <li><span>Circuit Analysis</span></li>
+        <li><span>Semiconductor Devices</span></li>
+        <li><span>Digital Circuits</span></li>
+        <li><span>Analog Circuits</span></li>
+      </ul>
+      <div class="ic-pins ic-pins--bottom"><span></span><span></span><span></span><span></span></div>
+    </div>
+
+    <div class="ic-card reveal">
+      <div class="ic-pins ic-pins--top"><span></span><span></span><span></span><span></span></div>
+      <h3>Microcontrollers</h3>
+      <ul class="skill-list">
+        <li><span>Arduino</span></li>
+        <li><span>ESP Series</span></li>
+        <li><span>NodeMCU</span></li>
+        <li><span>Jetson</span></li>
+      </ul>
+      <div class="ic-pins ic-pins--bottom"><span></span><span></span><span></span><span></span></div>
+    </div>
+
+    <div class="ic-card reveal">
+      <div class="ic-pins ic-pins--top"><span></span><span></span><span></span><span></span></div>
+      <h3>Tools</h3>
+      <ul class="skill-list">
+        <li><span>Git / GitHub</span></li>
+        <li><span>VS Code</span></li>
+        <li><span>Arduino IDE</span></li>
+        <li><span>Proteus</span></li>
+        <li><span>MySQL</span></li>
+        <li><span>Linux (Basics)</span></li>
+        <li><span>Excel</span></li>
+        <li><span>Canva</span></li>
+      </ul>
+      <div class="ic-pins ic-pins--bottom"><span></span><span></span><span></span><span></span></div>
+    </div>
+  </div>
+
+  <div class="certs reveal">
+    <h3 class="certs__title">Certifications</h3>
+    <div class="tag-row">
+      <span class="tag tag--cert">Data Structures &amp; Algorithms using C</span>
+      <span class="tag tag--cert">Introduction to C</span>
+      <span class="tag tag--cert">Analog Circuits and Digital Circuits</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section contact-section" id="contact">
+  <div class="section__head reveal">
+    <h2>Contact</h2>
+    <p class="section__sub">
+      Open to internships and embedded / IoT project collaborations.
+    </p>
+  </div>
+
+  <div class="contact__grid reveal">
+
+    <!-- Email -->
+    <a href="mailto:Dharshini.c2024ece@sece.ac.in" class="contact-card">
+      <svg viewBox="0 0 24 24">
+        <path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1.4 2 7.1 6.2a1 1 0 0 0 1 0L19.6 7H4.4zM4 9.4V17h16V9.4l-6.9 6a2 2 0 0 1-2.2 0L4 9.4z"/>
+      </svg>
+      <div>
+        <span class="contact-card__label">Email</span>
+        <span class="contact-card__value">
+          Dharshini.c2024ece@sece.ac.in
+        </span>
+      </div>
+    </a>
+
+    <!-- Phone -->
+    <a href="tel:+916379219540" class="contact-card">
+      <svg viewBox="0 0 24 24">
+        <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.7 21 3 13.3 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"/>
+      </svg>
+      <div>
+        <span class="contact-card__label">Phone</span>
+        <span class="contact-card__value">
+          +91 63792 19540
+        </span>
+      </div>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/dharshini-c-a74a18333"
+       class="contact-card"
+       target="_blank"
+       rel="noopener noreferrer">
+
+      <svg viewBox="0 0 24 24">
+        <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.1c.7-1.3 2.4-2.7 4.9-2.7 5.2 0 6.2 3.4 6.2 7.8V24h-5v-7c0-1.7 0-3.9-2.4-3.9s-2.8 1.9-2.8 3.8V24h-5V8z"/>
+      </svg>
+
+      <div>
+        <span class="contact-card__label">LinkedIn</span>
+        <span class="contact-card__value">
+          /in/dharshini-c-a74a18333
+        </span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>Designed &amp; built with HTML, CSS &amp; JS.</p>
+  <p>© <span id="year"></span> Dharshini C.</p>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
